@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montez&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="flex text-white font-cinzel-decorative w-full bg-image-third"
+    >
+      <div class="w-full bg-black/60">
+        <div class="w-full bg-gradient-to-b from-black/90 to-transparent">
+          <div class="w-flull bg-gradient-to-b to-black/70 from-transparent">
+            <div class="flex pl-6 ml-36">
+              <div class="pl-24 pr-14 pt-14">
+                <a href="./index.html">Acceuil</a>
+              </div>
+              <div class="pl-14 pt-14 pr-14">
+                <a href="./menu.html">Menu</a>
+              </div>
+              <a href="./index.html">
+                <img
+                  src="/src/img/ico/logo.png"
+                  alt="Logo du restaurant"
+                  width="150px"
+                  height="150px"
+                  class="ml-4"
+                />
+              </a>
+              <div class="pl-14 pt-14 pr-14">
+                <a href="./reservation.html">Resèvation</a>
+              </div>
+              <div class="pt-14 pr-14 pl-14">
+                <a href="./contact.html">Contact</a>
+              </div>
+            </div>
+            <div class="text-white font-mon-tez font-bold text-7xl ml-96 pl-36">
+              Résèrvez-vous
+              <div class="font-mon-tez text-7xl ml-56 text-select-text">
+                une table !
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div>
+      <div class="flex">
+        <div class="font-pop-pins text-lg font-light ml-64 h-full">
+          <div
+            class="text-3xl ml-64 m-12 border-2 text-black/80 border-slate-200 shadow-md rounded-lg p-4"
+          >
+            Résèrvez maintenant
+          </div>
+          <div>
+            <div>Nom</div>
+            <input
+              type="text"
+              name="nom"
+              id="nom"
+              class="pl-2 bg-slate-200"
+              required
+            />
+          </div>
+          <div>
+            <div>Numeros de telephone</div>
+            <input
+              type="tel"
+              name="number"
+              id="number"
+              class="pl-2 bg-slate-200"
+              required
+            />
+          </div>
+          <div class="m-4">
+            Heure et Date
+            <div class="flex mt-2">
+              <input
+                class="bg-slate-200 rounded-lg"
+                type="date"
+                name="date_de_reservation"
+                id="date_de_reservation"
+                required
+              />
+              <input
+                class="bg-slate-200 rounded-lg ml-4"
+                type="time"
+                name="heure_de_reservation"
+                id="heure_de_reservation"
+                required
+              />
+            </div>
+          </div>
+          <div class="flex m-4">
+            <div class="">Nbr de Personnes</div>
+            <div>
+              <input
+                class="bg-slate-200 rounded-lg ml-4"
+                type="number"
+                name="nbr_de_personnes"
+                id="nbre_de_personnes"
+                required
+              />
+            </div>
+          </div>
+          <div class="m-6">
+            <div class="">
+              <div class="text-xl font-semibold m-4">
+                Type de table préferée(Facultatif)
+              </div>
+              <div class="flex m-2">
+                <input
+                  class="bg-slate-200 rounded-lg"
+                  type="checkbox"
+                  name="1er_type_table"
+                  id="1er_type_table"
+                />
+                <div class="ml-2">Près de la fenetre pour une vue agréable</div>
+              </div>
+              <div class="flex m-2">
+                <input
+                  class="bg-slate-200 rounded-lg"
+                  type="checkbox"
+                  name="2eme_sorte_table"
+                  id="2eme_sorte_table"
+                />
+                <div class="ml-2">
+                  près de la Cheminée pour une ambiance chaleureuse
+                </div>
+              </div>
+              <div class="flex m-2">
+                <input
+                  class="bg-slate-200 rounded-lg"
+                  type="checkbox"
+                  name="3eme_sorte_table"
+                  id="3eme_sorte_table"
+                />
+                <div class="ml-2">A l'ecart pour plus d'intimité</div>
+              </div>
+              <div class="flex m-2">
+                <input
+                  class="bg-slate-200 rounded-lg"
+                  type="checkbox"
+                  name="4eme_sorte_table"
+                  id="4eme_sorte_table"
+                />
+                <div class="ml-2">
+                  A proximité de la cuisine pour les amateurs de gastronomie
+                </div>
+              </div>
+              <div class="flex m-2">
+                <input
+                  class="bg-slate-200 rounded-lg"
+                  type="checkbox"
+                  name="5eme_sorte_table"
+                  id="5eme_sorte_table"
+                />
+                <div class="ml-2">En terrase pour profiter du plein air</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-2 pl-6 border-2 w-36 justify-center font-semibold text-white bg-slate-950 rounded-lg ml-56"
+          >
+            <a href="./good_reservation.html">Résèrvez</a>
+          </div>
+        </div>
+        <div class="">
+          <img
+            src="/src/img/img/pexels-meruyert-gonullu-6161667.jpg"
+            alt="Image de
+      table de restaurant"
+            width="400px"
+            height="400px"
+            class="mt-44 shadow-lg shadow-black"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
